@@ -58,22 +58,21 @@
                 </div>
             </div>
         </section>
-<!-- My Work section constructed using CSS Grid-->
         <section id="myWork">
             <h1>WORK</h1>
             <div class="workGrid">
-                <div class="proj1Image">
+                <div class="project1Image">
                     <img src="images/rmnp.png" alt="rmnp prototype">
                 </div>
-                <div class="proj1">
+                <div class="project1">
                     <h4>RMNP Website Redesign</h4>
                     <p></p>Using the existing website and redesigning it to be responsive, intuitive, and user-friendly. Overall goal: Steamline the reservation booking process by redesigning with the most optimal features.</p>
                     <button id="myButton"><a href="https://larahenry.github.io/UX-UI-HW-18/">view case study</a></button>
                 </div>
-                <div class="proj2Image">
+                <div class="project2Image">
                     <img src="images/Website.png" alt="rmnp website">
                 </div>
-                <div class="proj2">
+                <div class="project2">
                     <h4>Colorado Wolf & Wildlife Website Redesign</h4>
                     <p>Using an existing non-profit website and redesigning it to be a responsive website. Overall Goal: Create a well-designed website to enhance online presence, help reach a wider audience, and ultimately further mission.</p>
                     <button id="myButton"><a href="#">view case study</a></button>
@@ -100,4 +99,14 @@
             <script src="https://unpkg.com/scrollreveal@4"></script>
             <script src="js/index.js"></script>
     </body>
+    @media only screen and (max-width: 600px)
+        #categoryGrid  {
+            margin: 0px 5%;
+            display:grid;
+            grid-template-rows: 300px 300px 300px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+            "my skills"
+            "my work"
+        }
 </html>
